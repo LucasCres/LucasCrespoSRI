@@ -38,7 +38,10 @@
 ![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/1e870df3-fb1c-4984-a3a8-e53fa0011c90)
 ### Bajamos en el documento hasta llegar donde aparece algo como esto pero comentado le quitamos la almohadilla y editamos con nuestras ip al principio se puede ver la subnet y la mascara seguido el rango de direcciones y la ip de nuestro Pfsense en la linea siguiente hay que poner el DNS y luego el nombre de nuestro dominio en mi caso asir03.com y el lease time.
 ![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/31e7aea3-d3e4-4282-a289-b5f3f7f48ff9)
-### E
+### Una vez teniendo configurado ese fichero solo haria falta iniciar el servidor dhcp unir el cliente y comprobar que le ha asignado una ip comencemos iniciandolo usando el comando `sitemctl start isc-dhcp-server`
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/e0221443-d59d-4118-afec-735d11853300)
+### Y para comprobar que ha ido bien usaremos `systemctl status isc-dhcp-server`
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/b2107d8e-dbce-418b-ab21-472914aa0737)
 
 
 
