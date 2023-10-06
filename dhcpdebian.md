@@ -23,6 +23,23 @@
 
 ## Configuracion del servidor DHCP<a name="id3"></a>
 
+### Como primer paso empezaremos instalando los servicios DHCP Debian al servidor usando el siguiente comando.
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/fbf89472-3838-4833-9b9c-b62028205a18)
+### El servicio DHCP solo debe estar disponible para la red interna por eso debe aceptar conexiones por la interfaz interna para esto primero haremos un  `ip a` para saber nuestra tarjeta de red en mi caso la enp0s3
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/0ef911ca-fac1-4284-a047-e000faa45abf)
+
+### Ya sabiendo esto deberemos editar el archivo /etc/default/isc-dhcp-server para ello haremos un nano a este y en el apartado ipv4 pondremos nuestra tarjeta de red.
+
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/c10f5b3a-c687-4e61-a2ce-679c5166ba0b)
+
+### Ahora vamos con la parte importante de la configuracion si se falla aqui lo mas probable es que no te funcione vamos a editar el archivo /etc/dhcp/dhcpd.conf hacemos un nano.
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/d3bccfdb-ec47-499a-bea1-3534138baa14)
+### En la primera parte del documento no hay que tocar nada para que funcione se deja como esta.
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/1e870df3-fb1c-4984-a3a8-e53fa0011c90)
+### Bajamos en el documento hasta llegar donde aparece algo como esto pero comentado le quitamos la almohadilla y editamos con nuestras ip al principio se puede ver la subnet y la mascara seguido el rango de direcciones y la ip de nuestro Pfsense en la linea siguiente hay que poner el DNS y luego el nombre de nuestro dominio en mi caso asir03.com y el lease time.
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/31e7aea3-d3e4-4282-a289-b5f3f7f48ff9)
+### E
+
 
 
 
