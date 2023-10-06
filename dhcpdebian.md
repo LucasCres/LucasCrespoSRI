@@ -4,7 +4,7 @@
 1. [Configuracion de las maquinas](#id1)
 2. [Configuracion de red de las maquinas](#id2)
 3. [Configuracion del servidor DHCP](#id3)
-4. [Cuarto apartado](#id4)
+4. [Unir el cliente](#id4)
 ## Configuracion de las maquinas<a name="id1"></a>
 ### En primer lugar esta es la configuracion inicial del Pfsense tiene que tener una tarjeta en adaptador puente y otra en red interna en mi caso ASIR203.
 ![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/1bf26fd0-0b1b-41eb-ab46-e6bac95b1ac7)
@@ -42,6 +42,12 @@
 ![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/e0221443-d59d-4118-afec-735d11853300)
 ### Y para comprobar que ha ido bien usaremos `systemctl status isc-dhcp-server`
 ![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/b2107d8e-dbce-418b-ab21-472914aa0737)
+## Unir el cliente <a name="id4"></a>
+### Una vez todo configurado es momento de unir el cliente windows10 con asegurarse de que esta en la misma red y por si acaso poner el mismo dns deberia unirse automaticamente con una ip asignada dentro del rango
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/0f619c26-de15-44de-965d-408f55a859f2)
+### Hacemos un ipconfig para comprobarlo y si tiene la ip bien asignada estaria todo correcto y finalizado.
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/6aeb26b8-a72d-4e65-a6a3-7dcc26ceb69d)
+
 
 
 
