@@ -1,4 +1,6 @@
 # CONFIGURACION DE UN SERVIDOR DHCP EN DEBIAN
+![image](https://github.com/LucasCres/LucasCrespoSRI/assets/144890487/5fda6fd3-5c01-4924-8fff-27f1d537bf86)
+
 ### En este documento en markdown se va ha explicar como crear un servidor DHCP en debian y añadir un cliente windows10.
 **Índice**   
 1. [Configuracion de las maquinas](#id1)
